@@ -286,39 +286,58 @@ nav a {
 
 /*footer*/
 /*color del cuadro*/
-
-
-.footer-creative{
-    background-color: #333;
-    height:  100vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-   
-    /*aqui modifique*/
+.footer-creative {
+  background-color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
 
+.footer-logo-text {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-/* Imagen del logo */
 .footer-logo-img {
   width: 600px;
+  max-width: 100%;
   height: auto;
   display: block;
-  padding: 0;
 }
+
+.footer-title {
+  font-size: 60px;
+  color: #33c6e0;
+  margin: 0;
+}
+
+.footer-c1 p {
+  font-size: 30px;
+  color: aliceblue;
+  line-height: 1.5;
+  flex: 1;
+  padding: 20px;
+}
+
+
+
+
+
 
 /* Imagen del botón */
 .footer-button-img {
@@ -335,23 +354,8 @@ nav a {
 .footer-button-img:hover {
   transform: scale(1.05);
 }
-/*dar color y manipular el h3 */
-.footer-creative h3{
-    font-size:60px;
-    color: #33c6e0;
-}
-.footer-creative p{
-    font-size: 30px;
-    color: aliceblue;
-}
-.footer-content{
-    display: flex;
-    padding: 0%;
-}
-.footer-animation{
-    margin-right: 10px;
-    padding: 0px 50px 0px 80px;
-}
+
+
 
   
 /*COLOR E LAS LETRAS SLIDER */
@@ -806,29 +810,33 @@ nav a {
     margin-right: 0;
     flex-basis: 100%;
   }
-
-  .footer-creative {
+  .footer-content {
     flex-direction: column;
-    height: auto;
-    padding: 20px;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  .footer-logo-text {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
   }
 
   .footer-logo-img {
-    width: 80%;
+    width: 90%;
+    height: auto;
   }
 
-  .footer-c1 {
-    transform: none;
-    text-align: center;
-  }
-
-  .footer-creative h3 {
+  .footer-title {
     font-size: 30px;
   }
 
-  .footer-creative p {
+  .footer-c1 p {
     font-size: 18px;
+    text-align: center;
+    padding: 10px;
   }
+
 
   #chat-toggle,
   .whatsapp-fixed img {
@@ -921,3 +929,4 @@ nav a {
 }
 
 }
+
